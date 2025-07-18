@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To Sofia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="lock-scroll">
+
+  <main class="intro-section">
+    <div class="camera-frame">
+      <video id="little-prince" src="littleprince.mov" muted playsinline></video>
+      <img src="Images/digicam.png" alt="Camera Frame" class="camera-overlay" />
+    </div>  
+  
+    <div class="cloud-container">
+      <img src="Images/Cloud-left.png" class="cloud left" />
+      <img src="Images/Cloud-right.png" class="cloud right" />
+    </div>
+  
+    <a href="#" id="enter-btn" class="btn">Enter</a>
+  
+    <div class="vinyl-container">
+      <img src="Images/Vinyl.PNG" alt="Spinning Vinyl" class="vinyl" />
+    </div>  
+    
+    <div class="stars"></div>  
+  
+    <audio id="bg-music" src="bgmusic.mp3" loop></audio>
+    <div id="scroll-popup">scroll ↓</div>
+  </main>
+  
+  <section id="polaroid-section" class="hidden">
+    <h2 class="polaroid-heading">2024 With You</h2>
+    <div class="scroll-section">
+      <button class="scroll-btn left-btn">←</button>
+      <div class="polaroid-wrapper">
+        <div class="polaroids">
+          <div class="polaroid"><img src="Images/polaroid1.png" alt="Memory 1" /></div>
+          <div class="polaroid"><img src="Images/polaroid2.png" alt="Memory 2" /></div>
+          <div class="polaroid"><img src="Images/polaroid3.png" alt="Memory 3" /></div>
+          <div class="polaroid"><img src="Images/polaroid4.png" alt="Memory 4" /></div>
+          <div class="polaroid"><img src="Images/polaroid5.png" alt="Memory 5" /></div>
+          <div class="polaroid"><img src="Images/polaroid6.png" alt="Memory 6" /></div>
+          <div class="polaroid"><img src="Images/polaroid7.png" alt="Memory 7" /></div>
+          <div class="polaroid"><img src="Images/polaroid8.png" alt="Memory 8" /></div>
+        </div>
+      </div>
+      <button class="scroll-btn right-btn">→</button>
+    </div>  
+    <div class="floating-stars"></div>
+    <div id="scroll-popup">scroll ↓</div>
+  </section>
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>To my Dearest Sofia,</strong>
+            <p>
+              Words don't come easily to me, but for you, they seem to flow almost naturally. Even as we go from this year to the next, and the years after, you will always have a special place in my heart. Merry Christmas and Happy New Year, I look forward to spending another year worth a lifetime with you.
+              With warmest wishes, Komi 🪷
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/734lGGZST0WrwbpINxsSz3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="heart"></div>
+    </div>
+  </div>
+  <div class="envelope-stars"></div>
+
+  <script src="script.js"></script>
+  <script>
+    const envelopeWrapper = document.querySelector('.envelope-wrapper');
+    envelopeWrapper.addEventListener('click', () => {
+      envelopeWrapper.classList.toggle('flap');
+    });
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+  </script>
+</body>
+</html>
